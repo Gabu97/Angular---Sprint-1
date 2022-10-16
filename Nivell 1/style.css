@@ -1,0 +1,189 @@
+* {
+  max-width: 1200px;
+  
+}
+
+
+.contenedor {
+  background-color: black !important;
+  padding: 20px;
+}
+.primera {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: rgb(215, 82, 82);
+  grid-gap: 20px;
+}
+.item1 {
+  padding: 20px;
+}
+.item {
+  padding: 20px;
+}
+
+.todo {
+  background-color: lightcoral;
+}
+
+.junto {
+  grid-column: 2/6;
+}
+
+.segunda {
+  display: grid;
+  background-color: black;
+  padding-top: 20px;
+
+  grid-gap: 20px;
+}
+
+.color {
+  padding: 10px;
+}
+
+.uno {
+  background-color: coral;
+}
+
+.dos {
+  background-color: cornsilk;
+}
+
+.contcolumnas {
+  display: grid;
+  grid-template-columns: 60% auto;
+  background-color: black;
+}
+
+.tercera {
+  background-color: black;
+  padding: 20px;
+  padding-right: 0px;
+  grid-gap: 20px;
+}
+
+.cuarta {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: black;
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.juntocol {
+  grid-column: 1/3;
+  background-color: indianred;
+}
+
+.item2 {
+  background-color: dodgerblue;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.cuatro {
+  background-color: rgb(150, 50, 50);
+  margin: 5px;
+}
+.cinco {
+  background-color: rgb(255, 134, 134);
+  margin: 5px;
+}
+.item3 {
+  background-color: rgb(255, 134, 134);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  padding-bottom: 70px;
+}
+
+.tres {
+  margin: 10px;
+  background-color: indianred;
+}
+
+.contenedorfinal {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px;
+}
+
+.itemfinal {
+  padding: 5px;
+  background-color: cornflowerblue;
+}
+/*tablet*/
+@media (max-width: 768px) {
+  .contcolumnas {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+  }
+  .tercera {
+    padding-right: 20px !important;
+    padding-bottom: 0px;
+  }
+  .cuatro {
+    background-color: rgb(150, 50, 50);
+    margin: 5px;
+    padding: 10px;
+    grid-row: span;
+  }
+  .item3 {
+    background-color: rgb(255, 134, 134);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+/*movil*/
+@media (max-width: 600px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .primera {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(87, 86, 154);
+    padding: 20px;
+  }
+
+  .junto {
+    grid-column: 1;
+  }
+
+  .contcolumnas {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+  }
+  .item2 {
+    background-color: dodgerblue;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .item3 {
+    background-color: rgb(255, 134, 134);
+    padding: 10px;
+  }
+  .tercera {
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 0;
+  }
+  .juntocol {
+    grid-column: 1/2;
+    background-color: indianred;
+  }
+  .cuatro {
+    background-color: rgb(150, 50, 50);
+    margin: 5px;
+    padding: 10px;
+    grid-row: span;
+  }
+}
